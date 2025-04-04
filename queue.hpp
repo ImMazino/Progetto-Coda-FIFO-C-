@@ -242,6 +242,7 @@ class Queue{
 
         /**
          * @brief Restituisce il numero di elementi nella coda.
+         * @return size
          */
         size_t size() const {
             return sizeQueue;
@@ -249,6 +250,7 @@ class Queue{
 
         /**
          * @brief Accesso in scrittura e lettura al primo elemento.
+         * @return valore head
          */
         T& front() {
             if (isEmpty()){
@@ -259,6 +261,7 @@ class Queue{
 
         /**
          * @brief Accesso in solo lettura al primo elemento.
+         * @return valore head
          */
         const T& front() const {
             if (isEmpty()){
@@ -269,6 +272,7 @@ class Queue{
 
         /**
          * @brief Accesso in scrittura e lettura all'ultimo elemento.
+         * @return valore tail
          */
         T& back() {
             if (isEmpty()){
@@ -279,6 +283,7 @@ class Queue{
 
         /**
          * @brief Accesso in sola lettura all'ultimo elemento.
+         * @return valore tail
          */
         const T& back() const {
             if (isEmpty()){
@@ -319,6 +324,7 @@ class Queue{
 
         /**
          * @brief Controlla se la coda e' vuota.
+         * @return bool
          */
         bool isEmpty() const {
             return head == nullptr;
